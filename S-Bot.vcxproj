@@ -44,8 +44,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard;C:\Users\David\Documents\Arduino\S-Bot;C:\Users\David\Documents\Arduino\libraries\adafruit-Adafruit-Motor-Shield-V1;C:\Users\David\Documents\Arduino\libraries\adafruit-Adafruit-Motor-Shield-V1\utility;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\David\Documents\Arduino\libraries;c:\program files (x86)\arduino\hardware\tools\avr\avr\include\;c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\;c:\program files (x86)\arduino\hardware\tools\avr\avr\;c:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>C:\Users\David\Documents\Arduino\S-Bot\Visual Micro\.S-Bot.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard;C:\Users\David\Documents\Arduino\AER201;C:\Users\David\Documents\Arduino\libraries\QTRSensors;C:\Users\David\Documents\Arduino\libraries\QTRSensors\utility;C:\Users\David\Documents\Arduino\libraries\AccelStepper-master;C:\Users\David\Documents\Arduino\libraries\AccelStepper-master\utility;C:\Users\David\Documents\Arduino\libraries\adafruit-Adafruit-Motor-Shield-V1;C:\Users\David\Documents\Arduino\libraries\adafruit-Adafruit-Motor-Shield-V1\utility;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\David\Documents\Arduino\libraries;c:\program files (x86)\arduino\hardware\tools\avr\avr\include\;c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\;c:\program files (x86)\arduino\hardware\tools\avr\avr\;c:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\David\Documents\Arduino\AER201\Visual Micro\.AER201.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
       <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;ARDUINO=160;ARDUINO_MAIN;__AVR__;__avr__;F_CPU=16000000L;__cplusplus;GCC_VERSION=40801;ARDUINO_ARCH_AVR;ARDUINO_AVR_UNO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -68,11 +68,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="S-Bot.ino">
-      <FileType>CppCode</FileType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="Visual Micro\.AER201.vsarduino.h" />
     <ClInclude Include="Visual Micro\.S-Bot.vsarduino.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
