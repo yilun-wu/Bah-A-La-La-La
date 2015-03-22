@@ -38,16 +38,22 @@ void setup()
 	stepper2.setAcceleration(500);
 	stepper1.setMinPulseWidth(20);
 	stepper2.setMinPulseWidth(20);
-	for (int i = 0; i < 200; i++)
-	{// reads all sensors 10 times at 2.5 ms per six sensors (i.e. ~25 ms per call)
-		qtrrc.calibrate();
-	}
+	//for (int i = 0; i < 200; i++)
+	//{// reads all sensors 10 times at 2.5 ms per six sensors (i.e. ~25 ms per call)
+	//	qtrrc.calibrate();
+	//}
 	Serial.begin(9600);
 }
 
 void loop()
 {
-	linefollow();
-  
+	intersect_detect();
+	delay(1000);
+	alignment();
+	delay(1000);
+	go(858, 300);
+	delay(1000);
+	rotate(85, 300);
+	go(-60, 300);
 
 }

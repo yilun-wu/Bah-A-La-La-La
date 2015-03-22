@@ -106,6 +106,7 @@
     <None Include="Basic_Stepper_Functions.ino" />
     <None Include="LineFollow.ino" />
     <None Include="SensorReading.ino" />
+    <None Include="Align.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\abi.cpp">

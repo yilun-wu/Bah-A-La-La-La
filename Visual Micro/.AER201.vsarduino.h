@@ -80,6 +80,7 @@ extern "C" void __cxa_pure_virtual() {;}
 #define portInputRegister(P)
 #define portModeRegister(P)
 #include <M-Bot.ino>
+#include <Align.ino>
 #include <Basic_Stepper_Functions.ino>
 #include <LineFollow.ino>
 #include <Motor_QTRSensor_Setup.ino>
