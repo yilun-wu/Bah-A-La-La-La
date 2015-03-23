@@ -34,8 +34,8 @@ void setup()
 {
 	stepper1.setMaxSpeed(390);
 	stepper2.setMaxSpeed(390);
-	stepper1.setAcceleration(500);
-	stepper2.setAcceleration(500);
+	stepper1.setAcceleration(400);
+	stepper2.setAcceleration(400);
 	stepper1.setMinPulseWidth(20);
 	stepper2.setMinPulseWidth(20);
 	//for (int i = 0; i < 200; i++)
@@ -47,13 +47,6 @@ void setup()
 
 void loop()
 {
-	intersect_detect();
-	delay(1000);
-	alignment();
-	delay(1000);
-	go(858, 300);
-	delay(1000);
-	rotate(85, 300);
-	go(-60, 300);
-
+	
+	rr_o();
 }

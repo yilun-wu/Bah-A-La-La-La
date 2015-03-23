@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "M-Bot", "AER201.vcxproj", "{869215DC-9F0B-4783-9C77-85F1F37B1352}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "S-Bot", "S-Bot.vcxproj", "{2BAF62C5-1731-44F8-A69B-559E1EB7369D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "S-Bot-L", "..\S-Bot-L\S-Bot-L.vcxproj", "{03C5324E-7D11-49E1-9861-4EBAB161CCA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{869215DC-9F0B-4783-9C77-85F1F37B1352}.Debug|Win32.Build.0 = Debug|Win32
 		{869215DC-9F0B-4783-9C77-85F1F37B1352}.Release|Win32.ActiveCfg = Release|Win32
 		{869215DC-9F0B-4783-9C77-85F1F37B1352}.Release|Win32.Build.0 = Release|Win32
-		{2BAF62C5-1731-44F8-A69B-559E1EB7369D}.Debug|Win32.ActiveCfg = Debug|Win32
-		{2BAF62C5-1731-44F8-A69B-559E1EB7369D}.Debug|Win32.Build.0 = Debug|Win32
-		{2BAF62C5-1731-44F8-A69B-559E1EB7369D}.Release|Win32.ActiveCfg = Release|Win32
-		{2BAF62C5-1731-44F8-A69B-559E1EB7369D}.Release|Win32.Build.0 = Release|Win32
+		{03C5324E-7D11-49E1-9861-4EBAB161CCA5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{03C5324E-7D11-49E1-9861-4EBAB161CCA5}.Debug|Win32.Build.0 = Debug|Win32
+		{03C5324E-7D11-49E1-9861-4EBAB161CCA5}.Release|Win32.ActiveCfg = Release|Win32
+		{03C5324E-7D11-49E1-9861-4EBAB161CCA5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

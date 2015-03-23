@@ -1,11 +1,11 @@
 void intersect_detect(){
 	int tilt_dir = 2; //2 for none, 1 for left, 3 for right
 	qtrrc.read(sensorValues_D);
-	unsigned int sensortotal = QTRtotal(sensorValues_D);
-	while (sensorValues_D[0] < 300 && sensorValues_D[NUM_SENSORS - 1] < 300){
+	while (QTRtotal(sensorValues_D) < 4000){
 		go_speed(3, 50);
 		qtrrc.read(sensorValues_D);
 	}
+	delay(100);
 	if (sensorValues_D[0]>300 && sensorValues_D[NUM_SENSORS - 1] < 300) tilt_dir = 3;
 	if (sensorValues_D[0]<300 && sensorValues_D[NUM_SENSORS - 1] > 300) tilt_dir = 1;
 	if (sensorValues_D[0]>300 && sensorValues_D[NUM_SENSORS - 1] > 300) tilt_dir = 2;
@@ -23,7 +23,8 @@ void intersect_detect(){
 	}
 	qtrrc.read(sensorValues_D);
 	if (sensorValues_D[0] > 300 && sensorValues_D[NUM_SENSORS - 1] > 300) return;
-	else { go(-6, -100); intersect_detect(); }
+	else { go(-1.5, 100); intersect_detect(); }
+	delay(100);
 }
 
 char on_intersect(unsigned int total){
@@ -32,12 +33,21 @@ char on_intersect(unsigned int total){
 }
 
 
-//
-char alignment(){
+void fine_align(){
+	align();
+	turn_left();
+	align();
+	turn_right();
+	//align();
+}
+
+char align(){
+	go(-4, 200);
+	intersect_detect();
 	alignment_l();
-	delay(500);
+	delay(100);
 	alignment_r();
-	return 1;
+	delay(100);
 }
 //
 void alignment_l(){

@@ -92,6 +92,9 @@
     <None Include="SensorReading.ino">
       <FileType>CppCode</FileType>
     </None>
+    <None Include="Steps.ino">
+      <FileType>CppCode</FileType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\Arduino.h" />
