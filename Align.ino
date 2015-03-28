@@ -41,6 +41,18 @@ void fine_align(){
 	//align();
 }
 
+void fine_align_l(){
+	align();
+	turn_left();
+	align();
+}
+
+void fine_align_r(){
+	align();
+	turn_right();
+	align();
+}
+
 char align(){
 	go(-4, 200);
 	intersect_detect();

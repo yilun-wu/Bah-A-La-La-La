@@ -99,6 +99,9 @@
     <ClInclude Include="..\libraries\adafruit-Adafruit-Motor-Shield-V1\AFMotor.h">
       <Filter>_libraries\adafruit-Adafruit-Motor-Shield-V1</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="M-Bot.ino" />
@@ -108,6 +111,9 @@
     <None Include="SensorReading.ino" />
     <None Include="Align.ino" />
     <None Include="Steps.ino" />
+    <None Include="Start.ino" />
+    <None Include="Path.ino" />
+    <None Include="To_Board.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\abi.cpp">

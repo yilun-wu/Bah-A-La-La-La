@@ -42,11 +42,18 @@ void setup()
 	//{// reads all sensors 10 times at 2.5 ms per six sensors (i.e. ~25 ms per call)
 	//	qtrrc.calibrate();
 	//}
-	Serial.begin(9600);
+	//Serial.begin(9600);
+	//fine_align_r();
+	//rotate(-45);
+	//go(10.5, 300);
+	//go(-10.5, 300);
+	//p321121();
+	//b2();
+	tb_y5();
+
 }
 
 void loop()
 {
 	
-	rr_o();
 }

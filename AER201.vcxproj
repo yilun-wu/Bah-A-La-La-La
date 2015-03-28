@@ -89,12 +89,15 @@
     <None Include="Motor_QTRSensor_Setup.ino">
       <FileType>CppCode</FileType>
     </None>
+    <None Include="Path.ino" />
     <None Include="SensorReading.ino">
       <FileType>CppCode</FileType>
     </None>
     <None Include="Steps.ino">
       <FileType>CppCode</FileType>
     </None>
+    <None Include="Start.ino" />
+    <None Include="To_Board.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\Arduino.h" />
@@ -119,6 +122,9 @@
     <ClInclude Include="..\libraries\AccelStepper-master\AccelStepper.h" />
     <ClInclude Include="..\libraries\adafruit-Adafruit-Motor-Shield-V1\AFMotor.h" />
     <ClInclude Include="..\libraries\QTRSensors\QTRSensors.h" />
+    <ClInclude Include="resource.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
     <ClInclude Include="Visual Micro\.AER201.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
