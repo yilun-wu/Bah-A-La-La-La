@@ -89,15 +89,21 @@
     <None Include="Motor_QTRSensor_Setup.ino">
       <FileType>CppCode</FileType>
     </None>
-    <None Include="Path.ino" />
+    <None Include="Path.ino">
+      <FileType>CppCode</FileType>
+    </None>
     <None Include="SensorReading.ino">
       <FileType>CppCode</FileType>
     </None>
     <None Include="Steps.ino">
       <FileType>CppCode</FileType>
     </None>
-    <None Include="Start.ino" />
-    <None Include="To_Board.ino" />
+    <None Include="Start.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="To_Board.ino">
+      <FileType>CppCode</FileType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\Arduino.h" />

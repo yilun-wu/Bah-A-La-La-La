@@ -1,5 +1,14 @@
 //goes from starting point, gets the right rear hopper ball and proceed towards the central point
 # define PICK 7.5
+//untested
+void start_o1(){
+	rotate(45);
+	go(-100, 300);
+	turn_left();
+	go(-60, 300);
+	turn_left();
+}
+
 void start_o3(){
 	//go(20, 300);
 	//fine_align_l();
@@ -16,7 +25,7 @@ void start_o2(){
 	go(80, 300);
 	turn_left();
 	go(40, 300);
-	turn_right();
+	fine_align_r();
 }
 
 void start_o4(){
