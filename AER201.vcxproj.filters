@@ -28,6 +28,12 @@
     <Filter Include="_libraries\adafruit-Adafruit-Motor-Shield-V1">
       <UniqueIdentifier>{2a700437-191d-4ea6-ad35-3a2305e29bb8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="_libraries\Keypad">
+      <UniqueIdentifier>{8fc23951-2c59-408a-b101-09e4180d5b1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_libraries\Keypad\utility">
+      <UniqueIdentifier>{55144ff8-ebd6-418f-9eb1-ac6bca9bf6c1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Visual Micro\.AER201.vsarduino.h">
@@ -102,6 +108,12 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\libraries\Keypad\Keypad.h">
+      <Filter>_libraries\Keypad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libraries\Keypad\utility\Key.h">
+      <Filter>_libraries\Keypad\utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="M-Bot.ino" />
@@ -114,6 +126,7 @@
     <None Include="Start.ino" />
     <None Include="Path.ino" />
     <None Include="To_Board.ino" />
+    <None Include="Testing.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\abi.cpp">
@@ -196,6 +209,12 @@
     </ClCompile>
     <ClCompile Include="..\libraries\adafruit-Adafruit-Motor-Shield-V1\AFMotor.cpp">
       <Filter>_libraries\adafruit-Adafruit-Motor-Shield-V1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libraries\Keypad\Keypad.cpp">
+      <Filter>_libraries\Keypad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libraries\Keypad\utility\Key.cpp">
+      <Filter>_libraries\Keypad\utility</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -61,7 +61,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard;C:\Users\David\Documents\Arduino\AER201;C:\Users\David\Documents\Arduino\libraries\AccelStepper;C:\Users\David\Documents\Arduino\libraries\AccelStepper\utility;C:\Users\David\Documents\Arduino\libraries\QTRSensors;C:\Users\David\Documents\Arduino\libraries\QTRSensors\utility;C:\Users\David\Documents\Arduino\libraries\adafruit-Adafruit-Motor-Shield-V1;C:\Users\David\Documents\Arduino\libraries\adafruit-Adafruit-Motor-Shield-V1\utility;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\David\Documents\Arduino\libraries;c:\program files (x86)\arduino\hardware\tools\avr\avr\include\;c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\;c:\program files (x86)\arduino\hardware\tools\avr\avr\;c:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard;C:\Users\David\Documents\Arduino\AER201;C:\Users\David\Documents\Arduino\libraries\AccelStepper;C:\Users\David\Documents\Arduino\libraries\AccelStepper\utility;C:\Users\David\Documents\Arduino\libraries\Keypad;C:\Users\David\Documents\Arduino\libraries\Keypad\utility;C:\Users\David\Documents\Arduino\libraries\QTRSensors;C:\Users\David\Documents\Arduino\libraries\QTRSensors\utility;C:\Users\David\Documents\Arduino\libraries\adafruit-Adafruit-Motor-Shield-V1;C:\Users\David\Documents\Arduino\libraries\adafruit-Adafruit-Motor-Shield-V1\utility;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\David\Documents\Arduino\libraries;c:\program files (x86)\arduino\hardware\tools\avr\avr\include\;c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\;c:\program files (x86)\arduino\hardware\tools\avr\avr\;c:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>C:\Users\David\Documents\Arduino\AER201\Visual Micro\.AER201.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
       <WholeProgramOptimization>false</WholeProgramOptimization>
@@ -101,6 +101,9 @@
     <None Include="Start.ino">
       <FileType>CppCode</FileType>
     </None>
+    <None Include="Testing.ino">
+      <FileType>CppCode</FileType>
+    </None>
     <None Include="To_Board.ino">
       <FileType>CppCode</FileType>
     </None>
@@ -127,6 +130,8 @@
     <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard\pins_arduino.h" />
     <ClInclude Include="..\libraries\AccelStepper-master\AccelStepper.h" />
     <ClInclude Include="..\libraries\adafruit-Adafruit-Motor-Shield-V1\AFMotor.h" />
+    <ClInclude Include="..\libraries\Keypad\Keypad.h" />
+    <ClInclude Include="..\libraries\Keypad\utility\Key.h" />
     <ClInclude Include="..\libraries\QTRSensors\QTRSensors.h" />
     <ClInclude Include="resource.h">
       <FileType>CppCode</FileType>
@@ -160,6 +165,8 @@
     <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\WString.cpp" />
     <ClCompile Include="..\libraries\AccelStepper-master\AccelStepper.cpp" />
     <ClCompile Include="..\libraries\adafruit-Adafruit-Motor-Shield-V1\AFMotor.cpp" />
+    <ClCompile Include="..\libraries\Keypad\Keypad.cpp" />
+    <ClCompile Include="..\libraries\Keypad\utility\Key.cpp" />
     <ClCompile Include="..\libraries\QTRSensors\QTRSensors.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

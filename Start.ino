@@ -4,7 +4,7 @@
 void start_o1(){
 	rotate(45);
 	go(-100, 300);
-	turn_left();
+	fine_align_l();
 	go(-60, 300);
 	turn_left();
 }
@@ -22,8 +22,11 @@ void start_o3(){
 
 void start_o2(){
 	rotate(-135);
+	align();
+
 	go(80, 300);
 	turn_left();
+	align();
 	go(40, 300);
 	fine_align_r();
 }
@@ -37,3 +40,12 @@ void start_o4(){
 	fine_align_l();
 }
 
+void start_o5(){
+	rotate(-45);
+	go(-100, 300);
+	turn_left();
+	go(80, 300);
+	turn_right();
+	go(20, 300);
+	turn_left();
+}

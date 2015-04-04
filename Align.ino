@@ -1,29 +1,33 @@
+#define TOTAL_TH 4000
+#define S0_TH 500 //Rightmost sensor
+#define S7_TH 500 //Leftmost sensor
+#define BACKWARD_DISTANCE -4.5
 void intersect_detect(){
 	int tilt_dir = 2; //2 for none, 1 for left, 3 for right
 	qtrrc.read(sensorValues_D);
-	while (QTRtotal(sensorValues_D) < 4000){
+	while (QTRtotal(sensorValues_D) < TOTAL_TH){
 		go_speed(3, 50);
 		qtrrc.read(sensorValues_D);
 	}
 	delay(100);
-	if (sensorValues_D[0]>300 && sensorValues_D[NUM_SENSORS - 1] < 300) tilt_dir = 3;
-	if (sensorValues_D[0]<300 && sensorValues_D[NUM_SENSORS - 1] > 300) tilt_dir = 1;
-	if (sensorValues_D[0]>300 && sensorValues_D[NUM_SENSORS - 1] > 300) tilt_dir = 2;
+	if (sensorValues_D[0]>S0_TH && sensorValues_D[NUM_SENSORS - 1] < S7_TH) tilt_dir = 3;
+	if (sensorValues_D[0]<S0_TH && sensorValues_D[NUM_SENSORS - 1] > S7_TH) tilt_dir = 1;
+	if (sensorValues_D[0]>S0_TH && sensorValues_D[NUM_SENSORS - 1] > S7_TH) tilt_dir = 2;
 	if (tilt_dir == 1){
-		while (sensorValues_D[0] < 300 && sensorValues_D[NUM_SENSORS - 1] > 300){
+		while (sensorValues_D[0] < S0_TH && sensorValues_D[NUM_SENSORS - 1] > S7_TH){
 			go_1(1, 20);
 			qtrrc.read(sensorValues_D);
 		}
 	}
 	if (tilt_dir == 3){
-		while (sensorValues_D[NUM_SENSORS - 1] < 300 && sensorValues_D[0] > 300){
+		while (sensorValues_D[NUM_SENSORS - 1] < S7_TH && sensorValues_D[0] > S0_TH){
 			go_2(1, 20);
 			qtrrc.read(sensorValues_D);
 		}
 	}
 	qtrrc.read(sensorValues_D);
-	if (sensorValues_D[0] > 300 && sensorValues_D[NUM_SENSORS - 1] > 300) return;
-	else { go(-1.5, 100); intersect_detect(); }
+	if (sensorValues_D[0] > S0_TH && sensorValues_D[NUM_SENSORS - 1] > S7_TH) return;
+	else { go(BACKWARD_DISTANCE, 100); intersect_detect(); }
 	delay(100);
 }
 
@@ -38,7 +42,6 @@ void fine_align(){
 	turn_left();
 	align();
 	turn_right();
-	//align();
 }
 
 void fine_align_l(){
@@ -53,18 +56,26 @@ void fine_align_r(){
 	align();
 }
 
-char align(){
+void align(){
 	go(-4, 200);
 	intersect_detect();
+	long prev_stepper2 = stepper2.currentPosition();
 	alignment_l();
 	delay(100);
+	long prev_stepper1 = stepper1.currentPosition();
 	alignment_r();
+	/*qtrrc.read(sensorValues_D);
+	if (QTRtotal(sensorValues_D) < TOTAL_TH){
+		stepper1.runToNewPosition(prev_stepper1);
+		stepper2.runToNewPosition(prev_stepper2);
+		align();
+	}*/
 	delay(100);
 }
 //
 void alignment_l(){
 	qtrrc.read(sensorValues_D);
-	while (sensorValues_D[0] > 300){
+	while (sensorValues_D[0] > S0_TH){
 		Serial.println(sensorValues_D[0]);
 		stepper1.move(1);
 		stepper1.setSpeed(50);
@@ -76,7 +87,7 @@ void alignment_l(){
 	stepper1.move(-4);
 	stepper1.runToPosition();
 	qtrrc.read(sensorValues_D);
-	while (sensorValues_D[0] > 300){
+	while (sensorValues_D[0] > S0_TH){
 		stepper1.move(-1);
 		stepper1.setSpeed(-50);
 		while (stepper1.distanceToGo()!=0)stepper1.runSpeedToPosition();
@@ -90,7 +101,7 @@ void alignment_l(){
 
 void alignment_r(){
 	qtrrc.read(sensorValues_D);
-	while (sensorValues_D[NUM_SENSORS - 1] > 300){
+	while (sensorValues_D[NUM_SENSORS - 1] > S7_TH){
 		Serial.println(sensorValues_D[0]);
 		stepper2.move(1);
 		stepper2.setSpeed(50);
@@ -102,7 +113,7 @@ void alignment_r(){
 	stepper2.move(-4);
 	stepper2.runToPosition();
 	qtrrc.read(sensorValues_D);
-	while (sensorValues_D[NUM_SENSORS - 1] > 300){
+	while (sensorValues_D[NUM_SENSORS - 1] > S7_TH){
 		stepper2.move(-1);
 		stepper2.setSpeed(-50);
 		while (stepper2.distanceToGo() != 0)stepper2.runSpeedToPosition();

@@ -88,6 +88,7 @@ extern "C" void __cxa_pure_virtual() {;}
 #include <SensorReading.ino>
 #include <Start.ino>
 #include <Steps.ino>
+#include <Testing.ino>
 #include <To_Board.ino>
 #include <resource.h>
 #endif
