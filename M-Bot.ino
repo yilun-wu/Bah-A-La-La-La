@@ -68,7 +68,7 @@ void setup()
 	//fine_align_l();
 	//go(-20, 300);
 
-	test();
+	//test();
 
 
 	/*if (String(codes) == "111311") p110310();
