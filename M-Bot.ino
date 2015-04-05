@@ -51,27 +51,31 @@ void setup()
 	stepper2.setAcceleration(300);
 	stepper1.setMinPulseWidth(20);
 	stepper2.setMinPulseWidth(20);
-	Serial.begin(9600);
-	/*char codes[7];
+	//Serial.begin(9600);
+	
+	char codes[7];
 	for (unsigned int i = 0; i < 6; i++){
 		char customKey = customKeypad.getKey();
 		while (!customKey) customKey = customKeypad.getKey();
 		codes[i] = customKey;
 	}
-	codes[6] = '\0'; */
-	//char start = customKeypad.getKey();
-	//while (!start) start = customKeypad.getKey();
+	codes[6] = '\0'; 
+	char start = customKeypad.getKey();
+	while (!start) start = customKeypad.getKey();
 	//leave s-bot
-	//go(-45, 60);
-	//turn_right();
-	//go(-10, 300);
-	//fine_align_l();
-	//go(-20, 300);
+	go(-52, 300);
+	turn_right();
+	go(-10, 300);
+	fine_align_l();
+	rotate(-137);
+	go(12.5, 300);
+	go(-12.5, 300);
+
 
 	//test();
 
 
-	/*if (String(codes) == "111311") p110310();
+	if (String(codes) == "111311") p110310();
 	if (String(codes) == "111312") p110311();
 	if (String(codes) == "111321") p110320();
 	if (String(codes) == "111322") p111321();
@@ -116,11 +120,11 @@ void setup()
 	if (String(codes) == "322111") p321110();
 	if (String(codes) == "322112") p321111();
 	if (String(codes) == "322121") p321120();
-	if (String(codes) == "322122") p321121();*/
-
+	if (String(codes) == "322122") p321121();
+	
 }
 
 void loop()
 {
-	sensorRaw();
+	//sensorRaw();
 }

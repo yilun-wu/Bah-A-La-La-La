@@ -1,15 +1,28 @@
-#define TOTAL_TH 4000
-#define S0_TH 500 //Rightmost sensor
-#define S7_TH 500 //Leftmost sensor
+#define TOTAL_TH 6000
+#define S0_TH 1000 //Rightmost sensor
+#define S7_TH 1000 //Leftmost sensor
 #define BACKWARD_DISTANCE -4.5
 void intersect_detect(){
 	int tilt_dir = 2; //2 for none, 1 for left, 3 for right
 	qtrrc.read(sensorValues_D);
+	long stepper_init = stepper1.currentPosition();
 	while (QTRtotal(sensorValues_D) < TOTAL_TH){
 		go_speed(3, 50);
 		qtrrc.read(sensorValues_D);
+		if (stepper1.currentPosition > stepper_init + 70) {
+			while (QTRtotal(sensorValues_D) < TOTAL_TH){
+				go_speed(-3, -50);
+				qtrrc.read(sensorValues_D);
+			}
+			go(-3, 300);
+			break;
+		}
 	}
-	delay(100);
+	while (QTRtotal(sensorValues_D) < TOTAL_TH){
+		go_speed(3, 50);
+		qtrrc.read(sensorValues_D);
+		delay(50);
+	}
 	if (sensorValues_D[0]>S0_TH && sensorValues_D[NUM_SENSORS - 1] < S7_TH) tilt_dir = 3;
 	if (sensorValues_D[0]<S0_TH && sensorValues_D[NUM_SENSORS - 1] > S7_TH) tilt_dir = 1;
 	if (sensorValues_D[0]>S0_TH && sensorValues_D[NUM_SENSORS - 1] > S7_TH) tilt_dir = 2;

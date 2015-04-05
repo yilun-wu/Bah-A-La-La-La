@@ -3,11 +3,11 @@ void p110310(){
 	start_o2();
 	tb_y2();
 	for (unsigned char i = 0; i < 3; i++){
-		o2();
+		g1();
 		tb_y2();
 	}
 	for (unsigned char i = 0; i < 4; i++){
-		g1();
+		o2();
 		tb_y2();
 	}
 	for (unsigned char i = 0; i < 7; i++){
@@ -320,6 +320,14 @@ void p121320(){
 void p121321(){
 	start_o2();
 	tb_y2();
+	for (unsigned char i = 0; i < 3; i++){
+		o2();
+		tb_y2();
+	}
+	for (unsigned char i = 0; i < 4; i++){
+		g2();
+		tb_y2();
+	}
 	for (unsigned char i = 0; i < 7; i++){
 		p3();
 		tb_y2();
@@ -328,19 +336,19 @@ void p121321(){
 		b2();
 		tb_y2();
 	}
-	for (unsigned char i = 0; i < 4; i++){
-		g2();
-		tb_y2();
-	}
-	for (unsigned char i = 0; i < 3; i++){
-		o2();
-		tb_y2();
-	}
 }
 //OK
 void p210210(){
 	start_o1();
 	tb_y3();
+	for (unsigned char i = 0; i < 3; i++){
+		o1();
+		tb_y3();
+	}
+	for (unsigned char i = 0; i < 4; i++){
+		g3();
+		tb_y3();
+	}
 	for (unsigned char i = 0; i < 7; i++){
 		p6();
 		tb_y3();
@@ -349,19 +357,19 @@ void p210210(){
 		b4();
 		tb_y3();
 	}
-	for (unsigned char i = 0; i < 4; i++){
-		g3();
-		tb_y3();
-	}
-	for (unsigned char i = 0; i < 3; i++){
-		o1();
-		tb_y3();
-	}
 }
 //OK
 void p210211(){
 	start_o1();
 	tb_y3();
+	for (unsigned char i = 0; i < 3; i++){
+		o1();
+		tb_y3();
+	}
+	for (unsigned char i = 0; i < 4; i++){
+		g3();
+		tb_y3();
+	}
 	for (unsigned char i = 0; i < 7; i++){
 		p6();
 		tb_y3();
@@ -370,19 +378,19 @@ void p210211(){
 		b6();
 		tb_y3();
 	}
-	for (unsigned char i = 0; i < 4; i++){
-		g3();
-		tb_y3();
-	}
-	for (unsigned char i = 0; i < 3; i++){
-		o1();
-		tb_y3();
-	}
 }
 //OK
 void p210220(){
 	start_o1();
 	tb_y3();
+	for (unsigned char i = 0; i < 3; i++){
+		o1();
+		tb_y3();
+	}
+	for (unsigned char i = 0; i < 4; i++){
+		g3();
+		tb_y3();
+	}
 	for (unsigned char i = 0; i < 7; i++){
 		p6();
 		tb_y3();
@@ -391,19 +399,19 @@ void p210220(){
 		b8();
 		tb_y3();
 	}
-	for (unsigned char i = 0; i < 4; i++){
-		g3();
-		tb_y3();
-	}
-	for (unsigned char i = 0; i < 3; i++){
-		o1();
-		tb_y3();
-	}
 }
 //OK
 void p210221(){
 	start_o1();
 	tb_y3();
+	for (unsigned char i = 0; i < 3; i++){
+		o1();
+		tb_y3();
+	}
+	for (unsigned char i = 0; i < 4; i++){
+		g3();
+		tb_y3();
+	}
 	for (unsigned char i = 0; i < 7; i++){
 		p6();
 		tb_y3();
@@ -412,19 +420,19 @@ void p210221(){
 		b7();
 		tb_y3();
 	}
-	for (unsigned char i = 0; i < 4; i++){
-		g3();
-		tb_y3();
-	}
-	for (unsigned char i = 0; i < 3; i++){
-		o1();
-		tb_y3();
-	}
 }
 //OK
 void p211210(){
 	start_o1();
 	tb_y3();
+	for (unsigned char i = 0; i < 3; i++){
+		o1();
+		tb_y3();
+	}
+	for (unsigned char i = 0; i < 4; i++){
+		g3();
+		tb_y3();
+	}
 	for (unsigned char i = 0; i < 7; i++){
 		p8();
 		tb_y3();
@@ -433,33 +441,25 @@ void p211210(){
 		b9();
 		tb_y3();
 	}
-	for (unsigned char i = 0; i < 4; i++){
-		g3();
-		tb_y3();
-	}
-	for (unsigned char i = 0; i < 3; i++){
-		o1();
-		tb_y3();
-	}
 }
 //OK
 void p211211(){
 	start_o1();
 	tb_y3();
+	for (unsigned char i = 0; i < 3; i++){
+		o1();
+		tb_y3();
+	}
+	for (unsigned char i = 0; i < 4; i++){
+		g3();
+		tb_y3();
+	}
 	for (unsigned char i = 0; i < 7; i++){
 		p8();
 		tb_y3();
 	}
 	for (unsigned char i = 0; i < 7; i++){
 		b6();
-		tb_y3();
-	}
-	for (unsigned char i = 0; i < 4; i++){
-		g3();
-		tb_y3();
-	}
-	for (unsigned char i = 0; i < 3; i++){
-		o1();
 		tb_y3();
 	}
 }
@@ -467,20 +467,20 @@ void p211211(){
 void p211220(){
 	start_o1();
 	tb_y3();
-	for (unsigned char i = 0; i < 7; i++){
-		g3();
-		tb_y3();
-	}
-	for (unsigned char i = 0; i < 7; i++){
-		b8();
+	for (unsigned char i = 0; i < 3; i++){
+		o1();
 		tb_y3();
 	}
 	for (unsigned char i = 0; i < 4; i++){
 		g3();
 		tb_y3();
 	}
-	for (unsigned char i = 0; i < 3; i++){
-		o1();
+	for (unsigned char i = 0; i < 7; i++){
+		p8();
+		tb_y3();
+	}
+	for (unsigned char i = 0; i < 7; i++){
+		b8();
 		tb_y3();
 	}
 }
@@ -488,6 +488,14 @@ void p211220(){
 void p211221(){
 	start_o1();
 	tb_y3();
+	for (unsigned char i = 0; i < 3; i++){
+		o1();
+		tb_y3();
+	}
+	for (unsigned char i = 0; i < 4; i++){
+		g3();
+		tb_y3();
+	}
 	for (unsigned char i = 0; i < 7; i++){
 		p8();
 		tb_y3();
@@ -496,19 +504,19 @@ void p211221(){
 		b7();
 		tb_y3();
 	}
-	for (unsigned char i = 0; i < 4; i++){
-		g3();
-		tb_y3();
-	}
-	for (unsigned char i = 0; i < 3; i++){
-		o1();
-		tb_y3();
-	}
 }
 //OK
 void p220211(){
 	start_o1();
 	tb_y3();
+	for (unsigned char i = 0; i < 3; i++){
+		o1();
+		tb_y3();
+	}
+	for (unsigned char i = 0; i < 4; i++){
+		g3();
+		tb_y3();
+	}
 	for (unsigned char i = 0; i < 7; i++){
 		p15();
 		tb_y3();
@@ -517,19 +525,19 @@ void p220211(){
 		b6();
 		tb_y3();
 	}
-	for (unsigned char i = 0; i < 4; i++){
-		g3();
-		tb_y3();
-	}
-	for (unsigned char i = 0; i < 3; i++){
-		o1();
-		tb_y3();
-	}
 }
 //OK
 void p220220(){
 	start_o1();
 	tb_y3();
+	for (unsigned char i = 0; i < 3; i++){
+		o1();
+		tb_y3();
+	}
+	for (unsigned char i = 0; i < 4; i++){
+		g3();
+		tb_y3();
+	}
 	for (unsigned char i = 0; i < 7; i++){
 		p15();
 		tb_y3();
@@ -538,19 +546,19 @@ void p220220(){
 		b8();
 		tb_y3();
 	}
-	for (unsigned char i = 0; i < 4; i++){
-		g3();
-		tb_y3();
-	}
-	for (unsigned char i = 0; i < 3; i++){
-		o1();
-		tb_y3();
-	}
 }
 //OK
 void p220221(){
 	start_o1();
 	tb_y3();
+	for (unsigned char i = 0; i < 3; i++){
+		o1();
+		tb_y3();
+	}
+	for (unsigned char i = 0; i < 4; i++){
+		g3();
+		tb_y3();
+	}
 	for (unsigned char i = 0; i < 7; i++){
 		p15();
 		tb_y3();
@@ -559,19 +567,19 @@ void p220221(){
 		b7();
 		tb_y3();
 	}
-	for (unsigned char i = 0; i < 4; i++){
-		g3();
-		tb_y3();
-	}
-	for (unsigned char i = 0; i < 3; i++){
-		o1();
-		tb_y3();
-	}
 }
 //OK
 void p221210(){
 	start_o1();
 	tb_y3();
+	for (unsigned char i = 0; i < 3; i++){
+		o1();
+		tb_y3();
+	}
+	for (unsigned char i = 0; i < 4; i++){
+		g3();
+		tb_y3();
+	}
 	for (unsigned char i = 0; i < 7; i++){
 		p16();
 		tb_y3();
@@ -580,19 +588,19 @@ void p221210(){
 		b4();
 		tb_y3();
 	}
-	for (unsigned char i = 0; i < 4; i++){
-		g3();
-		tb_y3();
-	}
-	for (unsigned char i = 0; i < 3; i++){
-		o1();
-		tb_y3();
-	}
 }
 //OK
 void p221220(){
 	start_o1();
 	tb_y3();
+	for (unsigned char i = 0; i < 3; i++){
+		o1();
+		tb_y3();
+	}
+	for (unsigned char i = 0; i < 4; i++){
+		g3();
+		tb_y3();
+	}
 	for (unsigned char i = 0; i < 7; i++){
 		p7();
 		tb_y3();
@@ -601,19 +609,19 @@ void p221220(){
 		b8();
 		tb_y3();
 	}
-	for (unsigned char i = 0; i < 4; i++){
-		g3();
-		tb_y3();
-	}
-	for (unsigned char i = 0; i < 3; i++){
-		o1();
-		tb_y3();
-	}
 }
 //OK
 void p221221(){
 	start_o1();
 	tb_y3();
+	for (unsigned char i = 0; i < 3; i++){
+		o1(); 
+		tb_y3();
+	}
+	for (unsigned char i = 0; i < 4; i++){
+		g3();
+		tb_y3();
+	}
 	for (unsigned char i = 0; i < 7; i++){
 		p7();
 		tb_y3();
@@ -622,58 +630,50 @@ void p221221(){
 		b7();
 		tb_y3();
 	}
-	for (unsigned char i = 0; i < 4; i++){
-		g3();
-		tb_y3();
-	}
-	for (unsigned char i = 0; i < 3; i++){
-		o1();
-		tb_y3();
-	}
 }
 //OK!
 void p310110(){
-	start_o3();
+	start_o4();
 	tb_y4();
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 3; i++)
 	{
-		p11();
+		o4();
 		tb_y4();
 	}
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 4; i++)
 	{
-		b12();
-		tb_y4();
-	}
-	for (char i = 0; i < 4; i++){
 		g4();
 		tb_y4();
 	}
-	for (char i = 0; i < 3; i++){
-		o4();
+	for (char i = 0; i < 7; i++){
+		p11();
+		tb_y4();
+	}
+	for (char i = 0; i < 7; i++){
+		b12();
 		tb_y4();
 	}
 }
 //OK!
 void p310111(){
-	start_o3();
+	start_o4();
 	tb_y1();
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 3; i++)
 	{
-		p11();
+		o4();
 		tb_y1();
 	}
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 4; i++)
 	{
-		b14();
-		tb_y1();
-	}
-	for (char i = 0; i < 4; i++){
 		g4();
 		tb_y1();
 	}
-	for (char i = 0; i < 3; i++){
-		o4();
+	for (char i = 0; i < 7; i++){
+		p11();
+		tb_y1();
+	}
+	for (char i = 0; i < 7; i++){
+		b14();
 		tb_y1();
 	}
 }
@@ -681,22 +681,22 @@ void p310111(){
 void p310120(){
 	start_o4();
 	tb_y1();
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 3; i++)
 	{
-		p11();
+		o4();
 		tb_y1();
 	}
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 4; i++)
 	{
-		b13();
-		tb_y1();
-	}
-	for (char i = 0; i < 4; i++){
 		g4();
 		tb_y1();
 	}
-	for (char i = 0; i < 3; i++){
-		o4();
+	for (char i = 0; i < 7; i++){
+		p11();
+		tb_y1();
+	}
+	for (char i = 0; i < 7; i++){
+		b13();
 		tb_y1();
 	}
 }
@@ -705,22 +705,22 @@ void p310120(){
 void p310121(){
 	start_o4();
 	tb_y1();
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 3; i++)
 	{
-		p11();
+		o4();
 		tb_y1();
 	}
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 4; i++)
 	{
-		b11();
-		tb_y1();
-	}
-	for (char i = 0; i < 4; i++){
 		g4();
 		tb_y1();
 	}
-	for (char i = 0; i < 3; i++){
-		o4();
+	for (char i = 0; i < 7; i++){
+		p11();
+		tb_y1();
+	}
+	for (char i = 0; i < 7; i++){
+		b11();
 		tb_y1();
 	}
 }
@@ -728,22 +728,22 @@ void p310121(){
 void p311110(){
 	start_o3();
 	tb_y4();
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 3; i++)
 	{
-		p12();
+		o3();
 		tb_y4();
 	}
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 4; i++)
 	{
-		b12();
-		tb_y4();
-	}
-	for (char i = 0; i < 4; i++){
 		g4();
 		tb_y4();
 	}
-	for (char i = 0; i < 3; i++){
-		o3();
+	for (char i = 0; i < 7; i++){
+		p12();
+		tb_y4();
+	}
+	for (char i = 0; i < 7; i++){
+		b12();
 		tb_y4();
 	}
 }
@@ -751,22 +751,22 @@ void p311110(){
 void p311111(){
 	start_o3();
 	tb_y1();
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 3; i++)
 	{
-		p12();
+		o3();
 		tb_y1();
 	}
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 4; i++)
 	{
-		b14();
-		tb_y1();
-	}
-	for (char i = 0; i < 4; i++){
 		g4();
 		tb_y1();
 	}
-	for (char i = 0; i < 3; i++){
-		o3();
+	for (char i = 0; i < 7; i++){
+		b14();
+		tb_y1();
+	}
+	for (char i = 0; i < 7; i++){
+		p12();
 		tb_y1();
 	}
 }
@@ -774,22 +774,22 @@ void p311111(){
 void p311120(){
 	start_o3();
 	tb_y1();
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 3; i++)
 	{
-		b13();
+		o3();
 		tb_y1();
 	}
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 4; i++)
 	{
-		p12();
-		tb_y1();
-	}
-	for (char i = 0; i < 4; i++){
 		g4();
 		tb_y1();
 	}
-	for (char i = 0; i < 3; i++){
-		o3();
+	for (char i = 0; i < 7; i++){
+		b13();
+		tb_y1();
+	}
+	for (char i = 0; i < 7; i++){
+		p12();
 		tb_y1();
 	}
 }
@@ -797,22 +797,22 @@ void p311120(){
 void p311121(){
 	start_o3();
 	tb_y1();
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 3; i++)
 	{
-		b11();
+		o3();
 		tb_y1();
 	}
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 4; i++)
 	{
-		p12();
-		tb_y1();
-	}
-	for (char i = 0; i < 4; i++){
 		g4();
 		tb_y1();
 	}
-	for (char i = 0; i < 3; i++){
-		o3();
+	for (char i = 0; i < 7; i++){
+		b11();
+		tb_y1();
+	}
+	for (char i = 0; i < 7; i++){
+		p12();
 		tb_y1();
 	}
 }
@@ -866,22 +866,22 @@ void p320111(){
 void p320120(){
 	start_o4();
 	tb_y1();
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 3; i++)
 	{
-		p14();
+		o4();
 		tb_y1;
 	}
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 4; i++)
 	{
-		b13();
-		tb_y1();
-	}
-	for (char i = 0; i < 4; i++){
 		g4();
 		tb_y1();
 	}
-	for (char i = 0; i < 3; i++){
-		o4();
+	for (char i = 0; i < 7; i++){
+		p14();
+		tb_y1();
+	}
+	for (char i = 0; i < 7; i++){
+		b13();
 		tb_y1();
 	}
 }
@@ -912,22 +912,22 @@ void p320121(){
 void p321110(){
 	start_o4();
 	tb_y4();
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 3; i++)
 	{
-		b12();
+		o4();
 		tb_y4();
 	}
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 4; i++)
 	{
-		p13();
-		tb_y4();
-	}
-	for (char i = 0; i < 4; i++){
 		g5();
 		tb_y4();
 	}
-	for (char i = 0; i < 3; i++){
-		o4();
+	for (char i = 0; i < 7; i++){
+		b12();
+		tb_y4();
+	}
+	for (char i = 0; i < 7; i++){
+		p13();
 		tb_y4();
 	}
 }
@@ -958,22 +958,22 @@ void p321111(){
 void p321120(){
 	start_o4();
 	tb_y1();
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 3; i++)
 	{
-		p13();
+		o4();
 		tb_y1;
 	}
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 4; i++)
 	{
-		b13();
-		tb_y1();
-	}
-	for (char i = 0; i < 4; i++){
 		g5();
 		tb_y1();
 	}
-	for (char i = 0; i < 3; i++){
-		o4();
+	for (char i = 0; i < 7; i++){
+		b13();
+		tb_y1();
+	}
+	for (char i = 0; i < 7; i++){
+		p13();
 		tb_y1();
 	}
 }
@@ -981,22 +981,22 @@ void p321120(){
 void p321121(){
 	start_o4();
 	tb_y1();
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 3; i++)
 	{
-		p13();
+		o4();
 		tb_y1;
 	}
-	for (char i = 0; i < 7; i++)
+	for (char i = 0; i < 4; i++)
 	{
-		b11();
-		tb_y1();
-	}
-	for (char i = 0; i < 4; i++){
 		g5();
 		tb_y1();
 	}
-	for (char i = 0; i < 3; i++){
-		o4();
+	for (char i = 0; i < 7; i++){
+		p13();
+		tb_y1();
+	}
+	for (char i = 0; i < 7; i++){
+		b11();
 		tb_y1(); 
 	}
 }

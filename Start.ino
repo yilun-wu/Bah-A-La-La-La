@@ -3,10 +3,12 @@
 //untested
 void start_o1(){
 	rotate(45);
+	align();
 	go(-100, 300);
 	fine_align_l();
 	go(-60, 300);
 	turn_left();
+	align();
 }
 
 void start_o3(){
@@ -15,9 +17,12 @@ void start_o3(){
 	//rotate(-45);
 	//go(PICK, 300);
 	//go(-PICK, 300);
-	go(-113.14, 300);
 	rotate(-135);
-	fine_align();
+	fine_align_l();
+	rotate(45);
+	go(113.14, 300);
+	rotate(45);
+	align();
 }
 
 void start_o2(){
@@ -32,20 +37,26 @@ void start_o2(){
 }
 
 void start_o4(){
-	rotate(11.3);
-	go(-72, 300);
-	rotate(-29.7);
-	go(-44.7, 300);
-	rotate(-26.5);
+	rotate(135);
 	fine_align_l();
+	rotate(56.3);
+	//rotate(11.3);
+	go(72, 300);
+	rotate(-29.7);
+	go(44.7, 300);
+	rotate(-26.5);
+	fine_align_r();
 }
 
 void start_o5(){
 	rotate(-45);
+	align();
 	go(-100, 300);
 	turn_left();
+	align();
 	go(80, 300);
 	turn_right();
+	align();
 	go(20, 300);
-	turn_left();
+	fine_align_l();
 }
