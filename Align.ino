@@ -10,19 +10,20 @@ void intersect_detect(){
 		go_speed(3, 50);
 		qtrrc.read(sensorValues_D);
 		if (stepper1.currentPosition > stepper_init + 70) {
+			go_speed(-70, -50);
 			while (QTRtotal(sensorValues_D) < TOTAL_TH){
 				go_speed(-3, -50);
 				qtrrc.read(sensorValues_D);
 			}
-			go(-3, 300);
-			break;
+			go_speed(-10, -50);
+			while (QTRtotal(sensorValues_D) < TOTAL_TH){
+				go_speed(3, 50);
+				qtrrc.read(sensorValues_D);
+				delay(50);
+			}
 		}
 	}
-	while (QTRtotal(sensorValues_D) < TOTAL_TH){
-		go_speed(3, 50);
-		qtrrc.read(sensorValues_D);
-		delay(50);
-	}
+
 	if (sensorValues_D[0]>S0_TH && sensorValues_D[NUM_SENSORS - 1] < S7_TH) tilt_dir = 3;
 	if (sensorValues_D[0]<S0_TH && sensorValues_D[NUM_SENSORS - 1] > S7_TH) tilt_dir = 1;
 	if (sensorValues_D[0]>S0_TH && sensorValues_D[NUM_SENSORS - 1] > S7_TH) tilt_dir = 2;
