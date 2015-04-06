@@ -489,7 +489,7 @@ void p211221(){
 	start_o1();
 	tb_y3();
 	for (unsigned char i = 0; i < 3; i++){
-		o1();
+		o1();//okay
 		tb_y3();
 	}
 	for (unsigned char i = 0; i < 4; i++){
@@ -724,7 +724,7 @@ void p310121(){
 		tb_y1();
 	}
 }
-//OK
+//OK, approved
 void p311110(){
 	start_o3();
 	tb_y4();
@@ -887,16 +887,16 @@ void p320120(){
 }
 //OK
 void p320121(){
-	start_o5();
+	start_o5();//change to head entrance
 	tb_y1();
 	for (char i = 0; i < 4; i++)
 	{
 		g4();
-		tb_y1;
+		tb_y1();
 	}
 	for (char i = 0; i < 3; i++)
 	{
-		o5();
+		o5();//follow start o5
 		tb_y1();
 	}
 	for (char i = 0; i < 7; i++){

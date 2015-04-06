@@ -1,4 +1,4 @@
-#define OS_TB 0
+#define OS_TB -1.5
 void tb_y1(){
 	rotate(45);
 	go(28.28, 300);

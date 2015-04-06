@@ -67,7 +67,7 @@ void setup()
 	turn_right();
 	go(-10, 300);
 	fine_align_l();
-	rotate(-137);
+	rotate(-140);
 	go(12.5, 300);
 	go(-12.5, 300);
 
@@ -122,9 +122,12 @@ void setup()
 	if (String(codes) == "322121") p321120();
 	if (String(codes) == "322122") p321121();
 	
+	//Serial.begin(9600);
+
+
 }
 
 void loop()
 {
-	//sensorRaw();
+	sensorRaw();
 }

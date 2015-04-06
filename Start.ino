@@ -35,28 +35,30 @@ void start_o2(){
 	go(40, 300);
 	fine_align_r();
 }
-
+//Wrong, should be right now
 void start_o4(){
 	rotate(135);
-	fine_align_l();
-	rotate(56.3);
-	//rotate(11.3);
-	go(72, 300);
-	rotate(-29.7);
-	go(44.7, 300);
-	rotate(-26.5);
 	fine_align_r();
+	rotate(146.3);
+	//rotate(11.3);
+	go(-72, 300);
+	rotate(-29.7);
+	go(-44.7, 300);
+	rotate(-26.5);
+	fine_align_l();
 }
 
 void start_o5(){
-	rotate(-45);
+	rotate(135);
+	fine_align_r();
+	turn_right();
 	align();
-	go(-100, 300);
+	go(-120, 300);
 	turn_left();
 	align();
 	go(80, 300);
 	turn_right();
 	align();
-	go(20, 300);
+	go(40, 300);
 	fine_align_l();
 }
