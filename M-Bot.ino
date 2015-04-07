@@ -65,7 +65,7 @@ void setup()
 	//leave s-bot
 	go(-52, 300);
 	turn_right();
-	go(-10, 300);
+	go(-7, 300);
 	fine_align_l();
 	rotate(-140);
 	go(12.5, 300);
@@ -123,11 +123,11 @@ void setup()
 	if (String(codes) == "322122") p321121();
 	
 	//Serial.begin(9600);
-
-
+	
+	//Serial.begin(9600);
 }
 
 void loop()
 {
-	sensorRaw();
+	//sensorRaw();
 }
