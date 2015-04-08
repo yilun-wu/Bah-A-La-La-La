@@ -19,8 +19,8 @@ void rotate(float degree){
 	int step_num = (int)(degree / 360.0 * 249.0);
 	stepper1.move(-step_num);
 	stepper2.move(step_num);
-	stepper1.setMaxSpeed(50);
-	stepper2.setMaxSpeed(50);
+	stepper1.setMaxSpeed(100);//original 50
+	stepper2.setMaxSpeed(100);
 	while (stepper1.distanceToGo() != 0 || stepper2.distanceToGo() != 0) { stepper1.run(); stepper2.run(); }
 	delay(100);
 }

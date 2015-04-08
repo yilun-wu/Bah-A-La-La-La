@@ -92,6 +92,7 @@
     <None Include="Path.ino">
       <FileType>CppCode</FileType>
     </None>
+    <None Include="Path1.ino" />
     <None Include="SensorReading.ino">
       <FileType>CppCode</FileType>
     </None>

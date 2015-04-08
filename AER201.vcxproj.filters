@@ -127,6 +127,7 @@
     <None Include="Path.ino" />
     <None Include="To_Board.ino" />
     <None Include="Testing.ino" />
+    <None Include="Path1.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\abi.cpp">

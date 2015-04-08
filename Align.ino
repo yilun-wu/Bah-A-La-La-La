@@ -11,7 +11,7 @@ void intersect_detect(){
 		qtrrc.read(sensorValues_D);
 		if (stepper1.currentPosition() > stepper_init + 110) {
 			delay(100);
-			go(-15, 100);
+			go(-15, 200);
 			while (QTRtotal(sensorValues_D) < TOTAL_TH){
 				go_speed(-3, -50);
 				qtrrc.read(sensorValues_D);

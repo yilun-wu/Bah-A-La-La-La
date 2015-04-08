@@ -85,6 +85,7 @@ extern "C" void __cxa_pure_virtual() {;}
 #include <LineFollow.ino>
 #include <Motor_QTRSensor_Setup.ino>
 #include <Path.ino>
+#include <Path1.ino>
 #include <SensorReading.ino>
 #include <Start.ino>
 #include <Steps.ino>
